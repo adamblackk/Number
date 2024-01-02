@@ -2,7 +2,9 @@ const express=require('express')
 
 const app=express()
 
-app.listen(5000)
+const port= process.env.PORT || 3000
+
+app.listen(port)
 
 app.get('/numbers', (req, res) => {
 
@@ -10,6 +12,8 @@ app.get('/numbers', (req, res) => {
     let request1 = req.query
     let rqKeys1 = Object.keys(request1)[1]
     let numberRq=request1[rqKeys1]
+    console.log(`sayı:${rqKeys1}`)
+    console.log(`sayıııı:${numberRq}`)
     // 1'den 100'e kadar olan sayıları diziye ekle
     for (var i = 1; i <= numberRq; i++) {
         numbersArray.push(i);
