@@ -4,7 +4,7 @@
   "description": "",
   "main": "numbers.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node your-main-file.js"
   },
   "author": "",
   "license": "ISC"
