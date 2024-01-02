@@ -4,7 +4,7 @@
   "description": "",
   "main": "numbers.js",
   "scripts": {
-    "start": "node your-main-file.js"
+    "start": "node numbers.js"
   },
   "author": "",
   "license": "ISC"
